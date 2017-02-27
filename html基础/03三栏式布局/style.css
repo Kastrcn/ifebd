@@ -1,0 +1,49 @@
+body{
+    margin: 20px;
+}
+.wapper{
+    position: relative;
+    height: 560px;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #999;
+    width:auto;
+}
+.wapper>.team-info{
+    position: absolute;
+    top: 25px;
+    width: 200px;
+    background-color: white;
+    height:150px;
+}
+.wapper>.team-info>img{
+    margin:25px;
+}
+.wapper>.team-member{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 120px;
+    background-color: white;
+}
+.wapper>.team-basic{
+    padding: 20px  20px 0 20px;
+    top: 20px;
+    left: 250px;
+    right: 170px;
+    position: absolute;
+    margin: 0 20px 20px 20px;
+    height: 460px;
+    background-color: white;
+}
+.wapper>.team-member>img{
+    margin: 25px;
+}
+.wapper{
+    display: flex;
+}
+.wapper>.team-info>span{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
