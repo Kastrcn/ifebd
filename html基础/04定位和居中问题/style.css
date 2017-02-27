@@ -1,0 +1,31 @@
+body>div{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    background-color: #ccc;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.circle {
+    position: relative;
+    left: 350px;
+    bottom: -150px;
+    border-radius: 100% 0 0 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fc0;
+    /* 宽度和高度需要相等 */
+}
+.circle2 {
+    position: relative;
+    border-radius:  0 0 100% 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: #fc0;
+}
