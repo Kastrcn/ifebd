@@ -1,0 +1,111 @@
+div {
+    background-color: green;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+/* background-position examples */
+
+/* These examples use the background shorthand CSS property */
+.exampleone {
+    background: url("https://mdn.mozillademos.org/files/11987/startransparent.gif") green 2.5cm bottom no-repeat;
+}
+.exampletwo {
+    background: url("https://mdn.mozillademos.org/files/11987/startransparent.gif") green 3em 50% no-repeat;
+}
+
+/*
+Multiple background images: Each image is matched with the
+corresponding position style, from first specified to last.
+*/
+.examplethree {
+    background-image: url("https://mdn.mozillademos.org/files/7693/catfront.png"),url("https://mdn.mozillademos.org/files/11987/startransparent.gif");
+
+    background-position: 0px 0px,
+                            center;
+}
+
+
+
+
+
+
+ul {
+    width: 200px;
+}
+li {
+    list-style-type: none;
+    position: relative;
+    margin: 2px;
+    padding: 0.5em 0.5em 0.5em 2em;
+    background: lightgrey;
+    font-family: sans-serif;
+}
+
+li.done {
+    background: #CCFF99;
+}
+
+li.done::before {
+    content: '';
+    position: absolute;
+    border-color: #009933;
+    border-style: solid;
+    border-width: 0 0.3em 0.25em 0;
+    height: 1em;
+    top: 1.3em;
+    left: 0.6em;
+    margin-top: -1em;
+    transform: rotate(45deg);
+    width: 0.5em;
+}
+
+
+
+.checkBox+label,.radios+label{
+
+}
+.t1+label{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d9d9d9;
+}
+
+.t1:checked+label{
+    border:1px solid #d73d32;
+    font-weight: 700;
+}
+.t1:checked+label:after{
+    content: '\2714';
+    color: red;
+    line-height: 16px;
+    font-size: 16px;
+}
+.t2+label{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+    display: inline-flex;
+}
+.t2:checked+label{
+    border:1px solid #d73d32;
+    font-weight: 700;
+}
+.t2:checked+label:after{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    line-height: 8px;
+    content: ' ';
+    background: red;
+}
+input{
+    margin:0;
+    display: none;
+}
+

@@ -1,0 +1,24 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --progress --colors"
+  },
+  "author": "kastrcn",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.84.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.2",
+    "webpack": "^2.2.1"
+  }
+}
