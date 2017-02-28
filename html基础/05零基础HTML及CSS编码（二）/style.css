@@ -26,11 +26,8 @@ header>ul>li>a{
 
 }
 div{
-    position: absolute;
-    right: 550px;
     padding: 35px 25px 15px;
     margin: 20px 15px;
-    left: 0px;
     background-color: #fff;
 }
 div>p{
@@ -87,9 +84,31 @@ div>lable{
     text-align: right;
     display: block;
 }
+div>span{
+
+}
 
 .registered{
-    position: absolute;
     top:80px;
-    right: 0px;
+    right:0;
+    position: absolute;
+}
+
+
+section{
+   margin-right: 550px;
+    overflow: auto;
+}
+.img{
+    height: 100%;
+    overflow: auto;
+}
+.img>div{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.img>div>img{
+    width: 130px;
+    height: 100px;
 }

@@ -100,7 +100,7 @@ function init() {
     leftIn.addEventListener("click",function () {
         addFrist(temp,val)
     });
-    
+
 
 }
 
