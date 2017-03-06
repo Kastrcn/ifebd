@@ -1,0 +1,184 @@
+*{
+
+}
+body{
+  margin: 0;
+}
+header{
+    width: 1280px;
+    height: 55px;
+    position: relative;
+}
+header img{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+header span{
+    position: absolute;
+    font-size: 21px;
+    color: #393a3a;
+    font-family: "黑体";
+    left: 100px;
+    top: 15px;
+}
+header>nav{
+    top: -13px;
+    right: 135px;
+    position: absolute;
+}
+header>nav>ul{
+    list-style: none;
+    justify-content:  flex-end;
+    display: flex;
+}
+header>nav>ul>li{
+    padding: 15px;
+    font-family: "微软雅黑";
+    color: #787b83;
+}
+header>nav>ul>li:first-child{
+    color: #e74f4d;
+    border-bottom: 4px solid #e74f4d;
+
+}
+.banner{
+    position: relative;
+    background:url("image/banner.png") no-repeat;
+    width: 1280px;
+    height: 854px;
+}
+.banner>div{
+    position: absolute;
+    top: 230px;
+    left: 115px;
+}
+
+.banner>div>span:first-child{
+    font-family: "微软雅黑";
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.banner>div>span:nth-child(3){
+    font-family: "微软雅黑";
+    font-size: 21px;
+    color: #fffdfd;
+}
+.banner>div>span:nth-child(5){
+    border-radius: 1px;
+    display: block;
+    width: 330px;
+    height: 65px;
+    background-color: #e74f4d;
+    font-family: "微软雅黑";
+    line-height: 61px;
+    margin-top: 68px;
+    text-align: center;
+    font-size: 30px;
+    color: #fffdfd;
+}
+.info{
+    width: 1280px;
+    height: 250px;;
+    display: flex;
+}
+.info>dl{
+    position: relative;
+}
+.info>dl>dt{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    background: url(image/icon1.png) no-repeat;
+    left: 180px;
+}
+.info>dl>dd{
+    text-align: center;
+    color: #767777;
+    width: 154px;
+    font-size: 14px;
+    font-family: "黑体";
+    margin-top: 135px;
+    margin-left: 125px;
+}
+.question{
+    text-align: center;
+    width: 1280px;
+    height: 360px;
+    background-color: #ededed;
+    font-size: 53px;
+    font-family: "黑体";
+    color: #a0a1a1;
+}
+.question>img{
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.search{
+    text-align: center;
+    width: 1280px;
+    height: 340px;
+    background: url("image/search.png") no-repeat;
+}
+.search>span:first-child{
+    display: block;
+    padding-top: 50px;
+    color: #ffffff;
+    font-size: 21px;
+    font-family: "黑体";
+}
+.search>span:nth-child(3){
+    display: block;
+    padding-top: 32px;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "黑体";
+}
+.search>div{
+    margin-top: 52px;
+}
+
+.search>div>select{
+    margin-right: 30px;
+    background-color: #fff;
+    width: 240px;
+    color: #a0a1a1;
+    height: 40px;
+}
+.search>div>select>option{
+    background-color: #e3e2e4;
+    width: 240px;
+    color: #a0a1a1;
+    height: 40px;
+}
+.search>div>input{
+    border: none;
+    background-color: #e74f4d;
+    width: 240px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #ffffff;
+    height: 40px;
+}
+.activity{
+    background-color: #f7f7f7;
+    height: 605px;
+    width: 1280px;
+}
+.from{
+    height: 1835px;
+    width: 1280px;
+}
+.contact{
+    height: 360px;
+    width: 1280px;
+    background-color: #32353e;
+}
+footer{
+    height: 55px;
+    width: 1280px;
+    background-color: #303039;
+}

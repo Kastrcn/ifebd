@@ -68,14 +68,11 @@ function  removeLast(linum) {
 function  addLast(temp,val) {
     var li = document.createElement("li");
     li.textContent=val.value;
-    li.style.height=val.value+"px";
-    console.log(li);
     temp.appendChild( li);
 }
 function  addFrist(temp,val) {
     var li = document.createElement("li");
     li.textContent=val.value;
-    li.style.height=val.value+"px";
     var linum = temp.getElementsByTagName("li");
     temp.insertBefore(li,linum[0]);
 
@@ -84,33 +81,6 @@ function init() {
     var temp = document.getElementById('list');
     var linum = temp.getElementsByTagName("li");
     liHandle(linum);
-    document.getElementById("sort").addEventListener("click",function () {
-        var linums = document.querySelectorAll("li");
-        for(var i=0 ;i< linums.length;i++){
-            for(var j=0;j<i;j++){
-                // console.log(linums[i].textContent<linums[j].textContent)
-
-                if(parseInt(linums[i].textContent)<parseInt(linums[j].textContent)){
-                    // console.log(linums[j].textContent,linums[i].textContent)
-                    var temps=linums[j].textContent;
-                    var h=linums[j].offsetHeight
-                    linums[j].textContent=linums[i].textContent;
-                    console.log(linums[i].offsetHeight)
-                    linums[j].style.height=linums[i].offsetHeight;
-                    linums[i].textContent=temps;
-                    linums[j].style.height=h;
-                    // console.log(linums[j],linums[i],temps)
-                }
-            }
-        }
-
-        temp.innerHTML="";
-        for(var m=0;m<linums.length;m++){
-            temp.appendChild(linums[m]);
-            console.log(linums[m]);
-        }
-
-    });
 
     var letfOut= document.getElementById("letfOut");
     var rightOut= document.getElementById("rightOut");
