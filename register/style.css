@@ -161,8 +161,6 @@ h2{
     display: -ms-flexbox;
     display: -moz-box;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
 }
 .weilei .radio2+label{
     border-radius: 50%;
